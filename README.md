@@ -12,11 +12,11 @@ Expected result: -> ZERO files.<br/>
 These IDs belong to the skin namespace and must not be accessed via $LOCALIZE[].
 
 3. $LOCALIZE[x] with x outside range 31000–31999
-Expected result: -> Allowed.<br/>
+Expected result: can be lines with such references -> Allowed.<br/>
 These usually refer to Kodi core strings and are valid.
 
 5. $ADDON[skin.name x] with x in range 31000–31999
-Expected result: -> Allowed.<br/>
+Expected result: can be lines with such references -> Allowed.<br/>
 This is the correct and required way to reference skin strings in Kodi 22+.
 
 7. $ADDON[skin.name x] with x outside range 31000–31999
